@@ -2,11 +2,11 @@
 This project aims to estimate depth maps of image pairs using neural network architectures
 
 <p align="center">
-<img src="[https://i.imgur.com/ylzs0zA.gif](https://github.com/Bparui/Cascade-Net-Implementation/blob/main/Imgs/input.png)" align="Center">
+<[![input](https://i.imgur.com/ylzs0zA.gif](https://github.com/Bparui/Cascade-Net-Implementation/blob/main/Imgs/input.png)]>
 </p>
 
 <p align="center">
-<img src="[https://i.imgur.com/ylzs0zA.gif](https://github.com/Bparui/Cascade-Net-Implementation/blob/main/Imgs/depthmap.png)" align="Center">
+<[![depthmap](https://i.imgur.com/ylzs0zA.gif](https://github.com/Bparui/Cascade-Net-Implementation/blob/main/Imgs/depthmap.png)]>
 </p>
 
 ## Tasks
