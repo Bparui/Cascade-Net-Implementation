@@ -15,16 +15,22 @@ GPU training
 ```
 export NGPUS=1
 export save_results_dir="./checkpoints"
-./scripts/sceneflow.sh $NGPUS $save_results_dir  --ndisps "48,24"  --disp_inter_r "4,1"   --dlossw "0.5,1.0,2.0"  --batch_size 2 --eval_freq 3  --model gwcnet-c
+./scripts/kitti15_save.sh $NGPUS $save_results_dir  --ndisps "48,24"  --disp_inter_r "4,1"   --dlossw "0.5,1.0,2.0"  --batch_size 2 --eval_freq 3  --model gwcnet-c
 ```
 
 ## Testing
 ```
 export NGPUS=1
 export save_results_dir="./checkpoints"
-./scripts/sceneflow.sh $NGPUS $save_results_dir --loadckpt $CKPT_FILE- --ndisps "48,24"  --disp_inter_r "4,1"   --batch_size 2 --mode test  --model gwcnet-c
+./scripts/kitti15_save.sh $NGPUS $save_results_dir --loadckpt $CKPT_FILE- --ndisps "48,24"  --disp_inter_r "4,1"   --batch_size 2 --mode test  --model gwcnet-c
 ```
 
 Here,
 * We are using a single GPU as we have constrained with the computation. Therefore ``NGPUS`` is set to ``1``. You can use the code in multi-GPU setting as well.
 * Set the ``CKPT_FILE`` as your checkpoint file which you have generated after training.
+
+## Save Depth Maps
+```
+export save_path="./outputs/predictions"
+./scripts/kitti15_save.sh $save_results_dir  --loadckpt $CKPT_FILE --ndisps "48,24"  --disp_inter_r "4,1"   --batch_size 2 --model gwcnet-c
+```
