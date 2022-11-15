@@ -1,9 +1,7 @@
 # Depth Map estimation using Cascade Flow
 This project aims to estimate depth maps of image pairs using neural network architectures
 
-<p align="center">
 ![input](https://github.com/Bparui/Cascade-Net-Implementation/blob/main/Imgs/input.png)
-</p>
 
 <p align="center">
 ![depthmap](https://github.com/Bparui/Cascade-Net-Implementation/blob/main/Imgs/depthmap.png)
